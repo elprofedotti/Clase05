@@ -48,5 +48,11 @@ b-->a
 `jQuery (CDN):` Utilizado para facilitar la manipulación del DOM y el manejo de eventos.
 
 <hr>
+
 ### Licencia 📄
+
+
 Este proyecto se encuentra bajo la licencia MIT.
+
+
+
