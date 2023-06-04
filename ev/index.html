@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Mi Servidor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <h1>Bienvenido a mi servidor</h1>
+    <p>Este servidor proporciona una interfaz de usuario para explorar y visualizar datos de la API JSONPlaceholder, incluyendo posts, comentarios, &aacute;lbumes, fotos, y m&aacute;s.</p>
+    
+    <h2>Consulta de endpoints</h2>
+    <select id="endpoints">
+        <option value="">--Seleccione</option>
+        <option value="post">Posts</option>
+        <option value="comments">Comments</option>
+        <option value="albums">Albums</option>
+        <option value="photos">Photos</option>
+        <option value="todos">Todos</option>
+        <option value="users">Users</option>
+        
+    </select>
+    <p id="totalRegistros"></p>
+    <div id="resultado" style="display: none;"></div>
+    <div id="detalle" style="display: none;"></div>
+    
+    
+    <div id="detalleModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="detalleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="detalleUsuario" style="display: none;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
+
